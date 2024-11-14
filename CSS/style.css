@@ -6,7 +6,7 @@
 }
 
 .background {
-    background-image: url(images/back1.jpg);
+    background-image: url(/images/back1.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -364,7 +364,7 @@ footer p {
 .background-contato {
     width: 100%;
     padding: 100px 0;
-    background-color: #101010; /* Cor do fundo que ocupa toda a seção */
+    background-color: #101010; 
 }
 
 
