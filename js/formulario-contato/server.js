@@ -11,10 +11,10 @@ app.use(bodyParser.json());
 
 // Configuração do Nodemailer
 const transporter = nodemailer.createTransport({
-    service: 'gmail', // Pode usar outros serviços também
+    service: 'gmail', 
     auth: {
-        user: process.env.EMAIL, // Carrega o email do arquivo .env
-        pass: process.env.PASSWORD, // Carrega a senha do arquivo .env
+        user: process.env.EMAIL, 
+        pass: process.env.PASSWORD, 
     },
 });
 
@@ -24,7 +24,7 @@ app.post('/enviar-email', (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: process.env.EMAIL, // E-mail que vai receber as mensagens (o seu e-mail)
+        to: process.env.EMAIL, 
         subject: `Mensagem de contato de ${nome}`,
         text: `
         Nome: ${nome}
